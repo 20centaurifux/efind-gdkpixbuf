@@ -1,0 +1,15 @@
+Source: efind-gdkpixbuf
+Section: utils
+Priority: optional
+Maintainer: Sebastian Fedrau <sebastian.fedrau@gmail.com>
+Build-Depends: debhelper (>=9), libgdk-pixbuf2.0-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/20centaurifux/efind-gdkpixbuf
+Vcs-Git: https://github.com/20centaurifux/efind-gdkpixbuf.git
+
+Package: efind-gdkpixbuf
+Architecture: any
+Depends: efind (>= 0.1-1), libgdk-pixbuf2.0-0 (>= 2.25.0), ${shlibs:Depends}
+Description: Filter search result by image properties.
+ efind extension for filtering search results by image properties
+ using gdk-pixbuf.
