@@ -5,7 +5,7 @@ Summary: Filter search results by image properties.
 
 License: GPLv3+
 URL: https://github.com/20centaurifux/efind-gdkpixbuf
-Source0: efind-gdkpixbuf-0.1.0.tar.xz
+Source0: efind-gdkpixbuf-0.1.1.tar.xz
 
 BuildRequires: gdk-pixbuf2-devel
 Requires: gdk-pixbuf2, efind
