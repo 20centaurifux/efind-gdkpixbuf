@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: efind
+Upstream-Name: efind-gdkpixbuf
 Source: https://github.com/20centaurifux/efind-gdkpixbuf
 
 Files: *

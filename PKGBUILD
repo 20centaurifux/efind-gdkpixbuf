@@ -1,6 +1,6 @@
 # Maintainer: Sebastian Fedrau <sebastian.fedrau@gmail.com>
 pkgname=efind-gdkpixbuf
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 epoch=
 pkgdesc="Filter search results by image properties."

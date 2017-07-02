@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-Wall -std=c99 -fPIC -O2 -nostartfiles -shared `pkg-config --cflags --libs gdk-pixbuf-2.0`
 LIBS=`pkg-config gdk-pixbuf-2.0`
 
-VERSION=0.1.0
+VERSION=0.1.1
 
 all:
 	$(CC) $(CFLAGS) $(INC) ./gdkpixbuf.c -o ./gdkpixbuf.so $(LDFLAGS) $(LIBS)
