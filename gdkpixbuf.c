@@ -27,7 +27,7 @@
 #include "extension-interface.h"
 
 #define NAME        "GDK-PixBuf"
-#define VERSION     "0.1.0"
+#define VERSION     "0.1.1"
 #define DESCRIPTION "Read image data with GDK-PixBuf."
 
 typedef struct
@@ -66,6 +66,12 @@ _read_properties(const char *filename)
 
 	if(strcmp(filename, cache.filename))
 	{
+		if(strlen(filename) >= PATH_MAX)
+		{
+			fprintf(stderr, "Filename exceeds allowed maximum length.\n");
+			return NULL;
+		}
+
 		GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file(filename, NULL);
 
 		memset(&cache, 0, sizeof(ImageProperties));
@@ -81,7 +87,8 @@ _read_properties(const char *filename)
 			             NULL); 
 			g_object_unref(pixbuf);
 
-			strncpy(cache.filename, filename, PATH_MAX);
+			strcpy(cache.filename, filename);
+
 			properties = &cache;
 		}
 	}
