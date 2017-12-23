@@ -1,11 +1,11 @@
 Name: efind-gdkpixbuf
-Version: 0.1.1
+Version: 0.2.0
 Release:        1%{?dist}
 Summary: Filter search results by image properties.
 
 License: GPLv3+
 URL: https://github.com/20centaurifux/efind-gdkpixbuf
-Source0: efind-gdkpixbuf-0.1.1.tar.xz
+Source0: efind-gdkpixbuf-0.2.0.tar.xz
 
 BuildRequires: gdk-pixbuf2-devel
 Requires: gdk-pixbuf2, efind
@@ -13,6 +13,8 @@ Requires: gdk-pixbuf2, efind
 %description
 efind-pixbuf is an extension for efind. It makes it possible
 to filter search results by image properties.
+
+%global debug_package %{nil}
 
 %prep
 %setup -q
@@ -28,7 +30,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
-%{_sysconfdir}/*
+%{_libdir}/efind/extensions/*.so
 
 
 
