@@ -27,7 +27,7 @@
 #include "extension-interface.h"
 
 #define NAME        "GDK-PixBuf"
-#define VERSION     "0.2.0"
+#define VERSION     "0.2.1"
 #define DESCRIPTION "Read image data with GDK-PixBuf."
 
 typedef struct

@@ -1,3 +1,9 @@
+efind-gdkpixbuf (0.2-1) unstable; urgency=low
+
+  * Python 3 migration
+
+ -- Sebastian Fedrau <sebastian.fedrau@gmail.com>  Sat, 13 Jul 2019 11:07:45 +0100
+
 efind-gdkpixbuf (0.2-0) unstable; urgency=low
 
   * new file locations
